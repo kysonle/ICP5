@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDoICP</title>
+</head>
+<body>
+<br>
+<br>
+<div><h1 style="color: white; margin-left: 50px">To Do ICP For 2019</h1></div>
+<br>
+<br>
+<input listName = "listItem" #listItem ngModel type = "text" placeholder="E.g Add your new todo in a list here!!"  style="width: 300px; margin-left: 20px"><button (click) = "submitNewItem(listItem.value);listItem.value = null">Add</button>
+<br>
+<br>
+<br>
+<td><button (click)="completeItem( itemList )" style="margin-left: 320px">Complete</button></td>
+<br>
+<br>
+<table border = "2" style="width: 360px; margin-left: 20px" class="completed">
+  <tr *ngFor = "let itemList of items" style="color: white" [ngClass]="{completed: itemList.isDone}">
+    <td style="width: 300px;" bgcolor="white">
+      <div class="view">
+      <input class="toggle" type="checkbox" [checked]="itemList.isDone">
+      <span style = "text-align: center; color: black">{{ itemList }}</span>
+      </div>
+    </td><td><button (click)="deleteItem( itemList )">Destroy</button></td>
+  </tr>
+</table>
+</body>
+</html>

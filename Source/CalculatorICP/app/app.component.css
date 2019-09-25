@@ -1,0 +1,69 @@
+
+h2 {
+  text-align: center;
+
+}
+.cal {
+  width: 370px;
+  height: 550px;
+  background: dimgray;
+  margin-top: 100px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.52), 0 2px 5px rgba(0, 0, 0, 0.54);
+  *zoom: 1;
+  margin-left: 100px;
+}
+.cal .screen {
+  width: 96%;
+  height: 70px;
+  background: white;
+  margin: 5px auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.32), 0 1px 2px rgba(0, 0, 0, 0.34);
+  text-align: right;
+  font-size: 50px;
+}
+.cal .screen p {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+}
+.cal .logo {
+  padding: 10px;
+  text-align: right;
+  margin: 10px;
+  font-weight: 600;
+  color: red;
+  font-size: 20px;
+}
+.cal .buttons {
+  width: 96%;
+  padding-top: 30px;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+.cal .buttons .button {
+  background: black;
+  float: left;
+  margin: 9px 9px;
+  height: 70px;
+  width: 70px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.32), 0 1px 2px rgba(0, 0, 0, 0.34);
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-top: 6px;
+
+}
+.cal .buttons .button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  text-align: center;
+}
+
+.cal .buttons .clear{
+  background-color: red;
+}
